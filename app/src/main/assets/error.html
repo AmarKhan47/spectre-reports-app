@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title></title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px; text-align: center;
+    font-family: -apple-system, Roboto, "Segoe UI", sans-serif;
+    background: #ffffff; color: #1f2937;
+  }
+  svg { width: 72px; height: 72px; margin-bottom: 20px; stroke: #1E3A8A; }
+  h1 { font-size: 20px; margin: 0 0 8px; }
+  p { margin: 0 0 28px; color: #6b7280; font-size: 15px; line-height: 1.5; max-width: 320px; }
+  a.btn {
+    display: inline-block; padding: 12px 32px; border-radius: 10px;
+    background: #1E3A8A; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  a.btn:active { opacity: .85; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111827; color: #f3f4f6; }
+    svg { stroke: #93c5fd; }
+    p { color: #9ca3af; }
+  }
+</style>
+</head>
+<body>
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M2 8.8a15 15 0 0 1 20 0"/>
+    <path d="M5 12.5a10.5 10.5 0 0 1 14 0"/>
+    <path d="M8.5 16a5.5 5.5 0 0 1 7 0"/>
+    <circle cx="12" cy="19.5" r="0.8"/>
+    <path d="M3 3l18 18"/>
+  </svg>
+  <h1>No connection</h1>
+  <p>We couldn't load your reports. Check your internet connection and try again.</p>
+  <a class="btn" href="app://retry">Try again</a>
+</body>
+</html>
